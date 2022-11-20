@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <!--Change webpage title to "Horiseon" instead of the generic "webpage"-->
+    <title>Horiseon</title>
 </head>
 
 <body>
-
+    <!--Added the header element-->
     <header>
         <div class="header h1">
             <h1>Hori<span class="seo">seo</span>n</h1>
-            <div class="mm">
-                <ul class="list">
-                    <li class="listitems">
+            <!--Changed class name to list-->
+            <div class="list">
+                <!--Remove unnecessary classes for ul and li and added ul and li us sub-selectors under list-->
+                <ul>
+                    <li>
                         <a href="#search-engine-optimization">Search Engine Optimization</a>
                     </li>
-                    <li class="listitems">
+                    <li>
                         <a href="#online-reputation-management">Online Reputation Management</a>
                     </li>
-                    <li class="listitems">
+                    <li>
                         <a href="#social-media-marketing">Social Media Marketing</a>
                     </li>
                 </ul>
@@ -28,28 +31,34 @@
         </div>
     </header>
 
+    <!--Added section elements to describe and separate each section into
+    clear indentifiable segments-->
     <section>
         <div>
             <figure><img src="./assets/images/digital-marketing-meeting.jpg" class="hero" /></figure>
         </div>
     </section>
 
+    <!--Formatted the div elements so that spacing is present between them
+    to improve navigation-->
     <section>
         <div class="content">
-            
-            <div class="search-engine-optimization">
-                <figure><img src="./assets/images/search-engine-optimization.jpg" class="float-left" /></figure>
+
+            <div class="content-individual">
+                <figure><img src="./assets/images/search-engine-optimization.jpg"/></figure>
                 <h2>Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they
                     travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
                     your visibility and find the right customers for your business.
                 </p>
-            
+
             </div>
-            
-            <div class="online-reputation-management">
-                <figure><img src="./assets/images/online-reputation-management.jpg" class="float-right" /></figure>
+
+            <div class="content-individual">
+                <!--Added float right to this picture inline as that allows compression
+                of selectors in stylesheet-->
+                <figure><img src="./assets/images/online-reputation-management.jpg" style="float:right"/></figure>
                 <h2>Online Reputation Management</h2>
                 <p>
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an
@@ -57,21 +66,22 @@
                     gives you the control over what potential customers see when they search for your business.
                 </p>
             </div>
-            
-            <div class="social-media-marketing">
-                <figure><img src="./assets/images/social-media-marketing.jpg" class="float-left" /></figure>
+
+            <div class="content-individual">
+                <figure><img src="./assets/images/social-media-marketing.jpg" /></figure>
                 <h2>Social Media Marketing</h2>
                 <p>
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps
-                    you determine which platforms are suited to your brand, using analytics to find the right markets and
+                    you determine which platforms are suited to your brand, using analytics to find the right markets
+                    and
                     increase your lead generation.
                 </p>
             </div>
-        
+
         </div>
 
         <div class="benefits">
-            <div class="benefit-lead">
+            <div class="benefit-individual">
                 <h3>Lead Generation</h3>
                 <figure><img src="./assets/images/lead-generation.png" /></figure>
                 <p>
@@ -79,7 +89,7 @@
                     directly to your website.
                 </p>
             </div>
-            <div class="benefit-brand">
+            <div class="benefit-individual">
                 <h3>Brand Awareness</h3>
                 <figure><img src="./assets/images/brand-awareness.png" /></figure>
                 <p>
@@ -88,7 +98,7 @@
                 </p>
             </div>
 
-            <div class="benefit-cost">
+            <div class="benefit-individual">
                 <h3>Cost Management</h3>
                 <figure><img src="./assets/images/cost-management.png"></img></figure>
                 <p>
